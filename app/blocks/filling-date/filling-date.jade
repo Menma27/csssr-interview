@@ -1,0 +1,10 @@
+mixin filling-date(data)
+	- data = data || {}
+	+b.filling-date&attributes(attributes)
+		+e('label').label(for=data.id)=data.label
+		+e('input').input(
+			type='text'
+			name=data.id
+			id=data.id
+			checked=data.checked
+		)

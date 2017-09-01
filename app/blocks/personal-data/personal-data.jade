@@ -1,0 +1,13 @@
+mixin personal-data(data)
+	- data = data || {}
+	+b.personal-data&attributes(attributes)
+		each item in data.items
+			+e.item
+				+e('label').label(for=item.id)=item.label
+				+e('input').input(
+					type='text'
+					name=item.id
+					id=item.id
+					value=item.value
+					checked=item.checked
+				)

@@ -1,0 +1,15 @@
+include ../checkbox/checkbox
+
+mixin about-checkboxes(data)
+	+b.about-checkboxes&attributes(attributes)
+		+e.title-wrapper
+			+heading=data.heading
+				
+		+e.subtitle-wrapper
+			+subheading=data.subheading
+		
+		+e.checkbox-wrapper
+			each column in data.colums
+				+e.column
+					each item in column.checkboxes
+						+checkbox(item)

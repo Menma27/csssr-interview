@@ -1,0 +1,10 @@
+mixin checkbox(data)
+	- data = data || {}
+	+b.checkbox&attributes(attributes)
+		+e('input').input(
+			type='checkbox'
+			name=data.id
+			id=data.id
+			checked=data.checked
+		)
+		+e('label').label(for=data.id)=data.label
