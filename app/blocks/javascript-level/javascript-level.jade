@@ -1,5 +1,10 @@
 mixin javascript-level(data)
 	+b.javascript-level&attributes(attributes)
 		+e.title-wrapper
-			+heading
-				| Уровень владения JavaScript
+			+heading=data.heading
+				
+		+e.slider
+		+e.levels
+			each item in data.levels
+				+e('p').level!=item.text.replace(/\n/g, '<br>')
+					

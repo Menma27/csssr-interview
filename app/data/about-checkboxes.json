@@ -65,11 +65,11 @@
 			}, {
 				"id": "accurate-eyes",
 				"checked": true,
-				"label": "С глазомером всё ок"
+				"label": "<sup>С</sup> глазомером <sub>всё</sub> <sub>ок</sub>"
 			}, {
 				"id": "read-blog",
 				"checked": true,
-				"label": "Читаю blog.csssr.ru"
+				"label": "Читаю <a href='http://blog.csssr.ru/'>blog.csssr.ru</a>"
 			}, {
 				"id": "lazy",
 				"checked": true,

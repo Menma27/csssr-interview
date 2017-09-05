@@ -1,5 +1,36 @@
 .javascript-level
 	display block
 
-	&__subtitle-wrapper
-		padding-top 12px
+	&__title-wrapper
+		padding-left 1px
+
+	&__slider
+		margin-top 40px
+		width 100%
+		height 28px
+		background url(../images/javascript-level/slider.png)
+		background-repeat no-repeat
+
+	&__levels
+		padding-top 3px
+		display flex
+		justify-content space-between
+
+	&__level
+		font-family 'PT Sans'
+		font-size 13px
+		font-weight 700
+		line-height 19px
+		color #2f1b15 // TODO переменная!
+
+	&__level:nth-child(1)
+		padding-top 2px
+
+	&__level:nth-child(2)
+		padding-left 22px
+
+	&__level:nth-child(3)
+		padding-right 29px
+
+	&__level:nth-child(4)
+		padding-top 7px
