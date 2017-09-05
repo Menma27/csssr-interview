@@ -1,18 +1,46 @@
 .personal-data
-	padding-top 76px
-	padding-bottom 72px
+	padding-top 48px
+	padding-bottom 61px
 	display flex
 	flex-direction column
 
-	&__item:not(:last-child)
-		padding-bottom 39px
+	&__item
+		display flex
+		align-items flex-end
+
+	&__item:not(:first-child)
+		padding-bottom 10px
+
+	&__item:nth-child(1),
+	&__item:nth-child(4)
+		padding-bottom 8px
+
+	&__input
+		max-width 698px
+		order 2
+		flex-grow 1
+		margin-left 19px
+		padding-left 15px
+		font-family 'Courier New'
+		font-size 30px
+		color #231f20
+		background url(../images/personal/line.png)
+		background-position center 41px // TODO fix styleint
+		background-repeat repeat-x // @stylint ignore
+		border-style none // @stylint ignore
+
+		&_year
+			margin-left 16px
+
+		&_skype,
+		&_mail
+			margin-left 16px
 
 	&__label
+		order 1
+		flex-grow 0
+		padding-bottom 2px
 		font-family 'PT Sans'
 		font-size 22px
 		font-weight 700
 		color #2f1b15 // TODO сделай переменную
-
-	&__input
-		background-color transparent
-		border none

@@ -1,2 +1,23 @@
 .checkbox
 	display block
+
+	&__input
+		display none
+		&:checked + label:before
+			display inline-block
+			content ''
+			sprite $checkbox_active
+
+	&__label
+		font-family 'PT Sans'
+		font-size 21px
+		font-weight 700
+		line-height 25px
+		color #000000 // TODO переменную!
+		&:before
+			position relative
+			padding-right 8px
+			display inline-block
+			cursor pointer
+			content ''
+			sprite $checkbox

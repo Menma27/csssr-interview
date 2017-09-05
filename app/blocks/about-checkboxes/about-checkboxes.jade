@@ -12,4 +12,5 @@ mixin about-checkboxes(data)
 			each column in data.colums
 				+e.column
 					each item in column.checkboxes
-						+checkbox(item)
+						+e.item
+							+checkbox(item)

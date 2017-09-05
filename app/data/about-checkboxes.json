@@ -26,34 +26,27 @@
 					"label": "Верстаю семантично"
 				}, {
 					"id": "a11y",
-					"checked": true,
 					"label": "Accessibility (A11Y)"
 				}, {
 					"id": "es6",
-					"checked": true,
 					"label": "ES2015/ES2016"
 				}]
 		}, {
 		"checkboxes":[
 			{
 				"id": "builder",
-				"checked": true,
 				"label": "Gulp/GRUNT"
 			}, {
 				"id": "package-managers",
-				"checked": true,
 				"label": "Webpack"
 			}, {
 				"id": "webgl",
-				"checked": true,
 				"label": "Дружу с WebGL"
 			}, {
 				"id": "jquery",
-				"checked": true,
 				"label": "jQuery"
 			}, {
 				"id": "angular",
-				"checked": true,
 				"label": "Знаю/изучаю Angular"
 			}, {
 				"id": "react",
@@ -61,7 +54,6 @@
 				"label": "Знаю/изучаю React"
 			}, {
 				"id": "node",
-				"checked": true,
 				"label": "Знаю/изучаю Node.js"
 			}]
 		}, {
@@ -84,8 +76,7 @@
 				"label": "Я ленивый(-ая)"
 			}, {
 				"id": "english",
-				"checked": true,
-				"label": "У меня хороший английский"
+				"label": "У меня хороший\n английский"
 		}]
 	}]
 }
