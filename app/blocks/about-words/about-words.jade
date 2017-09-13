@@ -5,14 +5,14 @@ mixin about-words(data)
 	+b.about-words&attributes(attributes)
 		+e.title-wrapper
 			+heading=data.heading
-				
+
 		+e.subtitle-wrapper
 			+subheading=data.subheading
-		
+
 		+e.textarea-wrapper
-			+e('textarea').textarea(
+			+e('textarea').textarea.js-textarea(
 				rows="3"
+				id='textarea'
 				name=data.name
-				placeholder="Ну-ууу-уу..."
-				wrap="soft"
+				placeholder="Ну-ууу-уу....\nЭэээ..."
 				)
