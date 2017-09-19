@@ -44,6 +44,9 @@ export default function makeWebpackConfig({
 			modulesDirectories: [
 				'node_modules'
 			],
+			alias: {
+				'jquery-ui': 'jquery-ui-dist/jquery-ui.js'
+			},
 			extensions: ['.js', '']
 		},
 		module: {

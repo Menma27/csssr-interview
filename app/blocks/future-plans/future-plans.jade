@@ -1,15 +1,14 @@
 include ../radio-button/radio-button
 
 mixin future-plans(data)
-	+b.future-plans&attributes(attributes)
+	+b('section').future-plans&attributes(attributes)
 		+e.title-wrapper
-			+heading
-				| Какие у вас планы на будущее?
-				
+			+heading=data.heading
+
 		+e.subtitle-wrapper
-			+subheading
-				| Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
-		
+			+subheading=data.subheading
+
 		+e.buttons-wrapper
 			each variant in data.variants
-				+radio-button(variant)
+				+e.item-wrapper
+					+radio-button(variant)

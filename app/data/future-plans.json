@@ -4,17 +4,21 @@
 	"variants":[
 		{
 			"id": "markup",
-			"label": "Верстать"
+			"label": "Верстать",
+			"name":"plans"
 		}, {
 			"id": "js",
 			"checked": true,
-			"label": "Прокачиваться в JS"
+			"label": "Прокачиваться в JS",
+			"name":"plans"
 		}, {
 			"id": "management",
-			"label": "Менеджерство"
+			"label": "Менеджерство",
+			"name":"plans"
 		}, {
 			"id": "other",
-			"label": "Другое"
+			"label": "Другое",
+			"name":"plans"
 		}
 	]
 }

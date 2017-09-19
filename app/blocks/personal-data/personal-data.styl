@@ -1,6 +1,5 @@
 .personal-data
 	padding-top 48px
-	padding-bottom 61px
 	display flex
 	flex-direction column
 
@@ -8,12 +7,15 @@
 		display flex
 		align-items flex-end
 
-	&__item:not(:first-child)
-		padding-bottom 10px
+		&:not(:first-child)
+			padding-top 10px
 
-	&__item:nth-child(1),
-	&__item:nth-child(4)
-		padding-bottom 8px
+		&:nth-child(2)
+			padding-top 8px
+
+		&:nth-child(3),
+		&:nth-child(5)
+			padding-top 11px
 
 	&__input
 		max-width 698px
@@ -23,14 +25,21 @@
 		padding-left 15px
 		font-family 'Courier New'
 		font-size 30px
-		color #231f20 // TODO переменная
+		color $dark-red-v2
 		background url(../images/personal/line.png)
 		background-position center 41px // TODO fix styleint
 		background-repeat repeat-x // @stylint ignore
 		border-style none // @stylint ignore
 
+		&__full-name
+			padding-left 13px
+
 		&_year
 			margin-left 16px
+			padding-left 14px
+
+		&_location
+			padding-left 12px
 
 		&_skype,
 		&_mail
@@ -43,4 +52,4 @@
 		font-family 'PT Sans'
 		font-size 22px
 		font-weight 700
-		color #2f1b15 // TODO сделай переменную
+		color $dark-red

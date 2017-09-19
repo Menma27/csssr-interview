@@ -14,14 +14,14 @@
 		font-family 'PT Sans'
 		font-size 20px
 		font-weight 700
-		color #000000 // TODO сделай переменную
+		color $black
 		&:before
 			position absolute
 			top -9px
 			left -25px
 			cursor pointer
 			content ''
-			sprite $radio_button
+			sprite $radio_button // TODO сделать after и анимацию
 
 	&__nth-child(0)
 		padding-left 2px

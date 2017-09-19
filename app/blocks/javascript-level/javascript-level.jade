@@ -1,9 +1,16 @@
 mixin javascript-level(data)
-	+b.javascript-level&attributes(attributes)
+	+b('section').javascript-level&attributes(attributes)
 		+e.title-wrapper
 			+heading=data.heading
-				
-		+e.slider
+
+		+e.slider(id='slider')(
+			value=48.8
+			)
+
+		+e('input').input(
+			type='text'
+			)
+
 		+e.levels
 			each item in data.levels
 				+e('p').level!=item.text.replace(/\n/g, '<br>')

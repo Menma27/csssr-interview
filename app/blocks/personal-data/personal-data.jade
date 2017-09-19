@@ -1,6 +1,6 @@
 mixin personal-data(data)
 	- data = data || {}
-	+b.personal-data&attributes(attributes)
+	+b('section').personal-data&attributes(attributes)
 		each item in data.items
 			+e.item
 				+e('input').input(

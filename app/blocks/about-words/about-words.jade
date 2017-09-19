@@ -2,7 +2,7 @@ include ../heading/heading
 include ../subheading/subheading
 
 mixin about-words(data)
-	+b.about-words&attributes(attributes)
+	+b('section').about-words&attributes(attributes)
 		+e.title-wrapper
 			+heading=data.heading
 
@@ -14,5 +14,5 @@ mixin about-words(data)
 				rows="3"
 				id='textarea'
 				name=data.name
-				placeholder="Ну-ууу-уу....\nЭэээ..."
+				placeholder="Ну-ууу-уу...\nЭэээ..."
 				)
