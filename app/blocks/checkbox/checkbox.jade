@@ -1,5 +1,8 @@
 mixin checkbox(data)
-	- data = data || {}
+	- data = data || {};
+	- var indent = data.indent;
+	- var height = data.height;
+
 	+b.checkbox&attributes(attributes)
 		+e('input').input(
 			type='checkbox'
@@ -7,4 +10,8 @@ mixin checkbox(data)
 			id=data.id
 			checked=data.checked
 		)
-		+e('label').label(for=data.id)!=data.label.replace(/\n/g, '<br>')
+		+e('label').label(
+			for=data.id
+			class= indent ? '_indent_' + indent : ''
+			class= height ? '_height_' + height : ''
+			)!=data.label.replace(/\n/g, '<br>')

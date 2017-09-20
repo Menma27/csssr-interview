@@ -2,7 +2,7 @@ extends /blocks/layout-default/layout-default
 
 include ../blocks/container/container
 include ../blocks/header/header
-include ../blocks/content-wrapper/content-wrapper
+include ../blocks/content-form/content-form
 include ../blocks/case/case
 include ../blocks/personal-data/personal-data
 include ../blocks/about-checkboxes/about-checkboxes
@@ -16,12 +16,12 @@ block head
 
 block content
 	+container
-		+header
-		+content-wrapper
-			+case
+		+header(getData('/header'))
+		+content-form
+			+case(getData('/case'))
 			+personal-data(getData('/personal-data'))
 			+about-checkboxes(getData('/about-checkboxes'))
 			+javascript-level(getData('/javascript-level'))
 			+about-words(getData('/about-words'))
 			+future-plans(getData('/future-plans'))
-		+footer
+			+footer

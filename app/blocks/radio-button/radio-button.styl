@@ -3,9 +3,9 @@
 
 	&__input
 		visibility hidden
-		&:checked + label:before
-			content ''
-			sprite $radio_button_active
+		&:checked + label:after
+			visibility visible
+			opacity 1
 
 	&__label
 		position relative
@@ -15,13 +15,23 @@
 		font-size 20px
 		font-weight 700
 		color $black
+
 		&:before
 			position absolute
 			top -9px
 			left -25px
 			cursor pointer
 			content ''
-			sprite $radio_button // TODO сделать after и анимацию
+			sprite $radio_button
+
+		&:after
+			position absolute
+			left -16px
+			content ''
+			sprite $radio_button_active
+			visibility hidden
+			opacity 0
+			transition opacity .3s, visibility .3s
 
 	&__nth-child(0)
 		padding-left 2px

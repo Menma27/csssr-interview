@@ -1,3 +1,4 @@
-mixin case()
-	+b('section').case&attributes(attributes)
-		block
+mixin case(data)
+	- data = data || {};
+
+	+b('img').case(src=data.case title='Дело товарища Алеева В.М' alt='Дело товарища Алеева В.М')&attributes(attributes)

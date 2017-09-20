@@ -3,14 +3,13 @@
 
 	&__input
 		display none
-		&:checked + label:before
-			bottom 6px
-			content ''
-			sprite $checkbox_active // TODO сделать after и анимацию
+		&:checked + label:after
+			visibility visible
+			opacity 1
 
 	&__label
 		position relative
-		padding-left 27px
+		padding-left 28px
 		display inline-block
 		font-family 'PT Sans'
 		font-size 21px
@@ -18,12 +17,39 @@
 		line-height 25px
 		user-select none
 		color $black
+
 		&:before
 			position absolute
-			left 0
+			top 2px
+			left 2px
 			cursor pointer
 			content ''
 			sprite $checkbox
+
+		&:after
+			position absolute
+			top -8px
+			left 4px
+			content ''
+			sprite $checkbox_active
+			visibility hidden
+			opacity 0
+			transition opacity .3s, visibility .3s
+
+		&_indent_left // отступ слева для элементов последней колонки и выравнивание checked
+			&:before
+				left 4px
+
+			&:after
+				left 6px
+
+
+		&_height_fix// выравнивание по высоте для последних 3 элементов последней колонки и выравнивание checked
+			&:before
+				top -2px
+
+			&:after
+				top -12px
 
 		sup
 			position relative

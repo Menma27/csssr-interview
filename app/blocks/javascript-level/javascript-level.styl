@@ -3,24 +3,27 @@
 	display block
 
 	&__title-wrapper
-		padding-left 1px
+		padding-left 2px
 
 	&__slider
 		margin-top 40px
 		width 100%
-		height 28px
 		background-image url(../images/javascript-level/slider.png)
 		background-repeat no-repeat
 
-		.ui-slider-handle
-			margin-top -10px
-			sprite $arrow !important
+	&>&__slider // перебиваем стили slider, чтобы не делать каскад
+		height 28px
+
+	&>&__slider>&__slider-handle // перебиваем стили handle с той же целью
+		margin-top -10px
+		margin-left -.4em
+		sprite $arrow
 
 	&__input
 		display none
 
 	&__levels
-		padding-top 3px
+		padding-top 4px
 		display flex
 		justify-content space-between
 
@@ -33,6 +36,7 @@
 
 	&__level:nth-child(1)
 		padding-top 2px
+		padding-left 1px
 
 	&__level:nth-child(2)
 		padding-left 22px

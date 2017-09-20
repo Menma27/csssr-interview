@@ -3,9 +3,8 @@ mixin javascript-level(data)
 		+e.title-wrapper
 			+heading=data.heading
 
-		+e.slider(id='slider')(
-			value=48.8
-			)
+		+e.slider(id='slider')._height-fix
+			+e('span').slider-handle.ui-slider-handle
 
 		+e('input').input(
 			type='text'

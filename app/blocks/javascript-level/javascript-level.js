@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'jquery-ui';
 
 $(() => {
-	const values = [0, 19.6, 48.8, 100];
+	const values = [0, 19.3, 48.4, 99.4];
 
 	const findNearest = (includeLeft, includeRight, value) => {
 		let nearest = null;
@@ -20,7 +20,8 @@ $(() => {
 	};
 
 	const slider = $('#slider').slider({
-		value: 48.8,
+		value: 48.4,
+		step: 0.1,
 		slide(event, ui) {
 			const includeLeft = event.keyCode !== $.ui.keyCode.RIGHT;
 			const includeRight = event.keyCode !== $.ui.keyCode.LEFT;
@@ -28,12 +29,4 @@ $(() => {
 			return false;
 		}
 	});
-
-	// render() {
-	// 	if (this.$el.length) {
-	// 		this
-	// 			.get()
-	// 			.init();
-	// 	}
-	// }
 });

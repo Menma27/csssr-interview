@@ -8,8 +8,8 @@
 			"name":"plans"
 		}, {
 			"id": "js",
-			"checked": true,
 			"label": "Прокачиваться в JS",
+			"checked": true,
 			"name":"plans"
 		}, {
 			"id": "management",

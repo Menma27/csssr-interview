@@ -10,14 +10,17 @@
 		color $dark-red
 
 	&__input
-		margin-left 19px
-		max-width 210px
+		position relative
+		top -13px
+		margin-left 21px
+		max-width 206px
 		order 2
-		padding-left 15px
+		padding-left 10px
 		font-family 'Courier New'
 		font-size 30px
-		color #231f20
-		background-image url(../images/personal/line.png)
-		background-repeat repeat-x
-		background-position center 29px // TODO fix styleint
+		color $dark-red-v2
+		background-color transparent // Проблемы с линтером!
+		background-image url(../images/personal/line.png)  // @stylint ignore
+		background-position center 38px  // @stylint ignore
+		background-repeat repeat-x // @stylint ignore
 		border none // @stylint ignore
