@@ -1,5 +1,6 @@
 mixin radio-button(data)
-	- data = data || {}
+	- data = data || {};
+
 	+b.radio-button&attributes(attributes)
 		+e('input').input(
 			type='radio'
@@ -7,4 +8,5 @@ mixin radio-button(data)
 			id=data.id
 			checked=data.checked
 		)
+
 		+e('label').label(for=data.id)=data.label

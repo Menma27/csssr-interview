@@ -2,5 +2,13 @@ mixin header(data)
 	- data = data || {};
 
 	+b('header').header&attributes(attributes)
-		+e('img').logo(src=data.logo title='CSSSR логотип' alt='CSSSR логотип')
-		+e('img').stamp(src=data.stamp title='Штамп Секретно' alt='Штамп Секретно')
+		+e('img').logo(
+			src=data.logo
+			title='CSSSR логотип'
+			alt='CSSSR логотип')
+
+		+e('img').stamp(
+			src=data.stamp
+			title='Штамп Секретно'
+			alt='Штамп Секретно'
+			)
