@@ -18,9 +18,11 @@
 					"label": "Stylus/LESS/SASS"
 				}, {
 					"id": "svg",
+					"checked": true,
 					"label": "Работаю с SVG"
 				}, {
 					"id": "semantic",
+					"checked": true,
 					"label": "Верстаю семантично"
 				}, {
 					"id": "a11y",
@@ -48,6 +50,7 @@
 				"label": "Знаю/изучаю Angular"
 			}, {
 				"id": "react",
+				"checked": true,
 				"label": "Знаю/изучаю React"
 			}, {
 				"id": "node",
@@ -57,19 +60,23 @@
 		"checkboxes":[
 			{
 				"id": "git",
+				"checked": true,
 				"label": "Использую Git",
 				"indent": "left"
 			}, {
 				"id": "accurate-eyes",
+				"checked": true,
 				"label": "<sup>С</sup> глазомером <sub>всё</sub> <sub>ок</sub>",
 				"indent": "left"
 			}, {
 				"id": "read-blog",
+				"checked": true,
 				"label": "Читаю <a href='http://blog.csssr.ru/'>blog.csssr.ru</a>",
 				"indent": "left",
 				"height": "fix"
 			}, {
 				"id": "lazy",
+				"checked": true,
 				"label": "Я ленивый(-ая)",
 				"indent": "left",
 				"height": "fix"

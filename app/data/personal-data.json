@@ -2,23 +2,23 @@
 	"items":[
 		{
 			"id": "full-name",
-			"value": "Иванов Иван Иванович",
+			"value": "Алеев Владислав Максимович",
 			"label": "Полное ФИО"
 		}, {
 			"id": "year",
-			"value": "1990",
+			"value": "1992",
 			"label": "Год рождения"
 		}, {
 			"id": "location",
-			"value": "г. Иваново, Россия",
+			"value": "г. Калининград, Россия",
 			"label": "Место жительства"
 		}, {
 			"id": "skype",
-			"value": "ivanov",
+			"value": "menma27",
 			"label": "Скайп"
 		}, {
 			"id": "mail",
-			"value": "ivanov@gmail.com",
+			"value": "vlad.aleev@gmail.com",
 			"label": "Почта"
 		}
 	]
