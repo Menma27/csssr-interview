@@ -1,0 +1,9 @@
+mixin logo(data)
+	- data = data || {};
+
+	+b('a').logo&attributes(attributes)(href=data.link)
+		+e('img')(
+			src=data.image
+			title=data.title
+			alt=data.title
+			)

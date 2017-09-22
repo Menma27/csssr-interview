@@ -1,14 +1,9 @@
+include ../field/field
+
 mixin personal-data(data)
 	- data = data || {}
 
 	+b('section').personal-data&attributes(attributes)
 		each item in data.items
 			+e.item
-				+e('input').input(
-					type='text'
-					class='_#{item.id}'
-					name=item.id
-					id=item.id
-					value=item.value
-				)
-				+e('label').label(for=item.id)=item.label
+				+field(item)

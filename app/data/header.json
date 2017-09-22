@@ -1,4 +1,4 @@
 {
-	"logo": "/assets/images/header/logo.png",
-	"stamp": "/assets/images/header/stamp.png"
+	"image": "/assets/images/header/stamp.png",
+	"title": "Штамп Секретно"
 }

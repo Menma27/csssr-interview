@@ -1,0 +1,12 @@
+mixin field(data)
+	- data = data || {} ;
+
+	+b.field&attributes(attributes)
+		+e('input').input(
+			type='text'
+			class='_#{data.id}'
+			name=data.id
+			id=data.id
+			value=data.value
+		)
+		+e('label').label(for=data.id)=data.label

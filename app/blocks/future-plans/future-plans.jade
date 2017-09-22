@@ -2,8 +2,7 @@ include ../radio-button/radio-button
 
 mixin future-plans(data)
 	+b('section').future-plans&attributes(attributes)
-		+e.title-wrapper
-			+heading=data.heading
+		+heading=data.heading
 
 		+e.subtitle-wrapper
 			+subheading=data.subheading
