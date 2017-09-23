@@ -1,6 +1,6 @@
 include ../filling-date/filling-date
 
-mixin footer(data)
-	- data = data || {}
+mixin footer()
+
 	+b('footer').footer&attributes(attributes)
 		+filling-date(getData('/filling-date'))

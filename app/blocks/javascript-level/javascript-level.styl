@@ -1,5 +1,5 @@
 .javascript-level
-	padding-top 60px
+	margin-bottom 33px
 	display block
 
 	&__title-wrapper
@@ -11,10 +11,10 @@
 		background-image url(../images/javascript-level/slider.png)
 		background-repeat no-repeat
 
-	&>&__slider // перебиваем стили slider, чтобы не делать каскад
+	& > &__slider // перебиваем стили slider, чтобы не делать каскад
 		height 28px
 
-	&>&__slider>&__slider-handle // перебиваем стили handle с той же целью
+	& > &__slider > &__slider-handle // перебиваем стили handle с той же целью
 		margin-top -10px
 		margin-left -.4em
 		sprite $arrow

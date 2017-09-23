@@ -2,7 +2,8 @@ include ../checkbox/checkbox
 
 mixin about-checkboxes(data)
 	+b('section').about-checkboxes&attributes(attributes)
-		+heading=data.heading
+		+e.title-wrapper
+			+heading=data.heading
 
 		+e.subtitle-wrapper
 			+subheading=data.subheading

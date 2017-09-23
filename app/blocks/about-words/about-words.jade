@@ -9,10 +9,9 @@ mixin about-words(data)
 		+e.subtitle-wrapper
 			+subheading=data.subheading
 
-		+e.textarea-wrapper
-			+e('textarea').textarea(
-				rows='3'
-				id='textarea'
-				name=data.name
-				placeholder='Ну-ууу-уу...\nЭэээ...'
-				)!=data.text
+		+e('textarea').textarea(
+			rows='3'
+			id='textarea'
+			name=data.name
+			placeholder='Ну-ууу-уу...\nЭэээ...'
+			)!=data.text

@@ -5,7 +5,6 @@
 	&__input
 		margin-left 19px
 		padding-left 15px
-		order 2
 		flex-grow 1
 		max-width 698px
 		font-family 'Courier New'
@@ -26,11 +25,22 @@
 		&_mail
 			margin-left 16px
 
+		&_date
+			position relative
+			top -13px
+			margin-left 21px
+			padding-left 10px
+			max-width 206px
+			background-position center 38px
+
 	&__label
-		order 1
 		flex-grow 0
 		padding-bottom 2px
 		font-family 'PT Sans'
 		font-size 22px
 		font-weight 700
 		color $dark-red
+
+	&_type_date
+		display flex
+		align-items center

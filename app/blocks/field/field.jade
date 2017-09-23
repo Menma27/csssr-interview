@@ -1,7 +1,11 @@
 mixin field(data)
 	- data = data || {} ;
 
-	+b.field&attributes(attributes)
+	+b.field(
+		class= type ? '_type_' + type : ''
+		)&attributes(attributes)
+		+e('label').label(for=data.id)=data.label
+
 		+e('input').input(
 			type='text'
 			class='_#{data.id}'
@@ -9,4 +13,3 @@ mixin field(data)
 			id=data.id
 			value=data.value
 		)
-		+e('label').label(for=data.id)=data.label
